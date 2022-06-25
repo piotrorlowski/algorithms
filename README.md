@@ -1,2 +1,0 @@
-# algorithms
-Algorithm coding challenges
