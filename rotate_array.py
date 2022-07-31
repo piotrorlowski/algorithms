@@ -7,8 +7,7 @@ class Solution(object):
         return nums
 
     def rotate_array_return_new_array(self, nums, k):
-        new_array = nums[-k:] + nums[:-k]
-        return new_array
+        return nums[-k:] + nums[:-k]
 
     def rotate_array_in_place(self, nums, k):
         k = k % len(nums)
@@ -28,8 +27,14 @@ class Solution(object):
             l, r = l + 1, r - 1
         return nums
 
+    def rotate(self, nums, k) -> None:
+        k = k % len(nums)
+        nums[:] = nums[-k:] + nums[:-k]
+        return nums
+
 
 solution = Solution()
 print(solution.rotate_array_slow([1, 2, 3, 4, 5, 6, 7], 3))
 print(solution.rotate_array_return_new_array([1, 2, 3, 4, 5, 6, 7], 3))
 print(solution.rotate_array_in_place([1, 2, 3, 4, 5, 6, 7], 3))
+print(solution.rotate([1, 2, 3, 4, 5, 6, 7], 3))

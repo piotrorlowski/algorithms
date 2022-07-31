@@ -1,4 +1,4 @@
-const reactions = [
+const messages = [
     {
         "reactions": [
             {

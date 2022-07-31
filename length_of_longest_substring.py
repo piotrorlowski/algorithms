@@ -19,7 +19,7 @@ def length_of_longest_substring(s):
         # add charSet to the index
         charSet.add(s[right])
         # calculate the length of the unique string by
-        # substracting left index + 1 from the right index
+        # substracting left (index) + 1 from the right index
         res = max(res, right - left + 1)
     return res
 
