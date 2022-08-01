@@ -1,4 +1,4 @@
-const messages = [
+const reactions = [
     {
         "reactions": [
             {
@@ -73,4 +73,4 @@ function getResponsesWithCount(messages) {
     })
 };
 
-console.log(getResponsesWithCount(messages));
+console.log(getResponsesWithCount(reactions));
