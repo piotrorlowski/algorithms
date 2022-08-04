@@ -4,7 +4,7 @@ def implement_strstr(haystack, needle):
     # haystack - hell o
     # needle - ll
     # substract len of needle from len of haystack and add 1
-    # to cut unnecessary checks
+    # to cut unnecessary checks in the end of the string
     for i in range(len(haystack) + 1 - len(needle)):
         if haystack[i : i + len(needle)] == needle:
             return i
